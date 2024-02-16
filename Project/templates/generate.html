@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Create Narration</title>
+</head>
+<body>
+    <h1>Video Upload</h1>
+    <form action="{{url_for('generateSummary')}}" method="post" enctype="multipart/form-data">
+        <input type="file" name="video" accept=".mp4" required>
+        <input type="submit" value="Upload">
+    </form>
+</body>
+</html>
